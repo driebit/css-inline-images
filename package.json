@@ -1,0 +1,25 @@
+{
+  "name": "css-inline-images",
+  "version": "0.0.0",
+  "description": "Inlines developer defined images as base64 strings in CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/driebit/css-inline-images.git"
+  },
+  "keywords": [
+    "css",
+    "images",
+    "inline",
+    "embed"
+  ],
+  "author": "Sjors Rijsdam <sjors.rijsdam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/driebit/css-inline-images/issues"
+  },
+  "homepage": "https://github.com/driebit/css-inline-images"
+}
