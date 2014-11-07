@@ -1,6 +1,6 @@
 {
   "name": "css-inline-images",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Inlines developer defined images as base64 strings in CSS",
   "main": "./index.js",
   "scripts": {

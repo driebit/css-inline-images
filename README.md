@@ -12,14 +12,25 @@ npm install css-inline-images
 ##Usage
 Append `?embed` to the urls of the images that you want inlined
 
-```css
-.leave-me-alone {
-    background-image: url(file.gif);
-}
+```javascript
+var cssInlineImages = require('css-inline-images'),
+    inputCss,
+    outputCss;
 
-.embed-me {
-    background-image: url(file.gif?embed)
-}
+inputCss = [
+    '.leave-me-alone {',
+        'background-image: url(file.gif);',
+    '}',
+
+    '.embed-me {',
+        'background-image: url(file.gif?embed);',
+    '}'
+].join('');
+
+outputCss = cssInlineImages(inputCss, {
+    webRoot: 'web',
+    path: 'otherImages'
+});
 ```
 
 The module will search for `url()` declarations in your CSS code so its use is not limited to background images.
